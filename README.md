@@ -4,13 +4,17 @@ GeoIP is a simple javascript library intended for use on multi-region *static*
 websites. To perform javascript redirects to the visiting user's correct region.
 
 The library works in the following way:
+
 1. Check for the user's preferred region (if set) in local storage and verifies 
 its age.
+
 2. Checks for a cached store of the user's _actual_ region and verifies its age.
+
 3. Failing the above, it will then perform a 
 [MaxMind Javascript API](http://dev.maxmind.com/geoip/geoip2/javascript/) request
 for the user's _actual_ ISO country code and store the associated location in
 the user's local storage with the current timestamp.
+
 4. If the user is not on the discovered regional url, a redirect will be performed
 to it; in the case of the default region, this will be simply:
 

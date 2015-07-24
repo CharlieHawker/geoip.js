@@ -1,0 +1,12 @@
+{
+  "name": "geoip.js",
+  "main": "lib/geoip.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

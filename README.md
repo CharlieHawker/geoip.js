@@ -11,6 +11,18 @@ its age.
 [MaxMind Javascript API](http://dev.maxmind.com/geoip/geoip2/javascript/) request
 for the user's _actual_ ISO country code and store the associated location in
 the user's local storage with the current timestamp.
+4. If the user is not on the discovered regional url, a redirect will be performed
+to it; in the case of the default region, this will be simply:
+
+  ```
+  /<current_path>
+  ```
+
+  Or for non-default regions:
+
+  ```
+  /<region>/<current_path>
+  ```
 
 
 ## Requirements
@@ -46,22 +58,22 @@ after critical meta tags):
     ```
 
 3. Create a new instance of GeoIp with your site's available regions and their 
-associated ISO-3166 country codes, as well as the default region:
+associated [ISO-3166](http://www.iso.org/iso/country_codes) country codes, as well as the default region:
 
     ```
       window.geoIp = new GeoIp({
         regions: {
           'europe': [
-            'uk','fr','de','it','es'
+            'GB','FR','DE','IT','ES'
           ],
           'asia': [
-            'jp','cn'
+            'JP','CN'
           ],
           'apac': [
-            'nz','au'
+            'NZ','AU'
           ],
           'americas': [
-            'us','ca','mx'
+            'US','CA','MX'
           ]
         },
         defaultRegion: 'europe'

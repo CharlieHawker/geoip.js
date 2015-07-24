@@ -118,4 +118,4 @@ Defaults to `['preferred', 'maxmind']`.
 
 ## Comments / suggestions
 
-Feel free to get in touch [by email](hello@charliehawker.com) or [twitter (@CharlieHawker)](http://twitter.com/CharlieHawker)
+Feel free to get in touch [by email](mailto:hello@charliehawker.com) or [twitter (@CharlieHawker)](http://twitter.com/CharlieHawker)
